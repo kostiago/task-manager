@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./Task.scss";
+import TaskItem from "./TaskItem";
 
 const Tasks = () => {
   const [tasks, setTaks] = useState([
@@ -29,7 +30,7 @@ const Tasks = () => {
           {tasks
             .filter((task) => task.isCompleted === false)
             .map((lastTask) => (
-              <p>{lastTask.description}</p>
+              <TaskItem task={lastTask} />
             ))}
         </div>
       </div>
@@ -39,7 +40,7 @@ const Tasks = () => {
           {tasks
             .filter((task) => task.isCompleted)
             .map((completedTask) => (
-              <p>{completedTask.description}</p>
+              <TaskItem task={completedTask} />
             ))}
         </div>
       </div>
