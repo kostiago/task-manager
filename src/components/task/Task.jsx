@@ -15,6 +15,18 @@ const Tasks = () => {
       description: "Ler diariamente",
       isCompleted: true,
     },
+
+    {
+      id: 3,
+      description:
+        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius, perspiciatis velit ut at id omnis esse possimus sunt atque doloremque!",
+      isCompleted: false,
+    },
+    {
+      id: 4,
+      description: "Acordar as 7 da manhã todo dia",
+      isCompleted: false,
+    },
   ]);
 
   const handleChangeMessage = () => {
